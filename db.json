@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "afiq",
+      "email": "afiqsam@gmail.com",
+      "password": "password123",
+      "id": 1
+    },
+    {
+      "name": "afiq sam",
+      "email": "afiqsam@icloud.com",
+      "password": "password123",
+      "id": 2
+    },
+    {
+      "email": "afiqsam@gmail.com",
+      "password": "aaaa",
+      "name": "afiq",
+      "id": 3
+    },
+    {
+      "email": "afiqsam@gmail.com",
+      "password": "aaaa",
+      "name": "afiq",
+      "id": 4
+    },
+    {
+      "email": "htht",
+      "password": "hththt",
+      "name": "htht",
+      "id": 5
+    },
+    {
+      "email": "afiqsam@icloud.com",
+      "password": "hahahahah",
+      "name": "afiq",
+      "id": 6
+    }
+  ]
+}
