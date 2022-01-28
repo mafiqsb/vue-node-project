@@ -15,11 +15,11 @@
     </p>
     </div>
 </div>
-    
+
 </div>
 
 </template>
-    
+
 <script>
 
 import axios from 'axios'
@@ -36,19 +36,25 @@ data() {
 methods: {
    async signUp()
     {
-        let result = await axios.post("http://localhost:3000/users", {
-            email : this.email,
-            password : this.password,
-            name : this.name
-        });
-
-     console.warn(result);
-     if (result.status==201)
-     {
-        //  alert("sign up done");
-         localStorage.setItem("user-info", JSON.stringify(result.data))
+        // let result = await axios.post("http://localhost:3000/users", {
+        //     email : this.email,
+        //     password : this.password,
+        //     name : this.name
+        // });
+        let result = {
+          email : this.email,
+          password : this.password,
+          name : this.name
+        };
+      localStorage.setItem("user-info", JSON.stringify(result))
          this.$router.push({name:'Home'})
-     }
+    //  console.warn(result);
+    //  if (result.status==201)
+    //  {
+    //     //  alert("sign up done");
+    //      localStorage.setItem("user-info", JSON.stringify(result.data))
+    //      this.$router.push({name:'Home'})
+    //  }
     }
 },
 
